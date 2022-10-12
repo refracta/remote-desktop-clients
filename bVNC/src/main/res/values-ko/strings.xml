@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-  <string name="audio_will_be_initialized">오디오는 약 15초로 초기화됩니다. 그때까지 실행 중인 비디오 또는 오디오 재생을 중지하십시오.</string>
-  <string name="audio_initialized">오디오가 초기화되었습니다.</string>
+  <string name="audio_will_be_initialized">오디오가 15초 내로 초기화됩니다, 그 전에 실행 중인 비디오 또는 오디오 재생을 중지하십시오</string>
+  <string name="audio_initialized">오디오가 초기화됨</string>
   <string name="action_import_settings">설정 가져오기</string>
   <string name="action_new_connection">새로운 연결</string>
   <string name="action_edit_default_settings">기본 설정 편집</string>
@@ -46,10 +46,10 @@
   <string name="vv_file_error">.vv 파일을 찾을 수 없거나 파손되었습니다!</string>
   <string name="info_cert">이 새로운 또는 변경된 호스트 인증서를 수락하시겠습니까?
 \n\nFingerprints:\nMD5: %1$s\nSHA1: %2$s\nSHA256: %3$s\n\nIssued to: %4$s\nIssued by: %5$s\n\nValid from: %6$s\nValid until: %7$s\n</string>
-  <string name="input_method_direct_swipe_pan">다이렉트, 스와이프 팬</string>
-  <string name="input_method_direct_drag_pan">다이렉트, 홀드팬</string>
-  <string name="input_method_single_handed">한 손으로</string>
-  <string name="input_method_touchpad">시뮬레이션된 터치패드</string>
+  <string name="input_method_direct_swipe_pan">직접, 스와이프 팬</string>
+  <string name="input_method_direct_drag_pan">직접, 팬 고정</string>
+  <string name="input_method_single_handed">한 손</string>
+  <string name="input_method_touchpad">터치패드 시뮬레이션</string>
 
   <string name="toggle_keyboard">키보드 전환</string>
   <string name="show_keyboard">키보드 표시</string>
@@ -62,7 +62,7 @@
   <string name="input_method_help_text">"
 어떤 입력 방법이든 키보드 아이콘을 탭하여 화면 키보드를 표시합니다. 또한 기기에 키보드를 표시하는 고유한 제스처가 있을 수 있습니다.
 
-직관적인 터치 스크린 제어에는 직접 입력 모드를 사용합니다. 마우스를 더 세밀하게 제어하려면 시뮬레이션된 터치패드 모드를 사용합니다.
+직관적인 터치 스크린 제어에는 직접 입력 모드를 사용합니다. 마우스를 더 세밀하게 제어하려면 터치패드 시뮬레이션 모드를 사용합니다.
 
 다이렉트, 스와이프 팬 방식:
   - 터치로 직접 마우스를 조작합니다.
@@ -76,14 +76,14 @@
   - 탭하면 탭한 위치에서 마우스를 클릭합니다.
   - 스크롤 이벤트는 두 손가락으로 스와이프가 시작된 두 손가락 사이에 전송됩니다.
 
-시뮬레이션된 터치패드 방식:
+터치패드 시뮬레이션 방식:
   - 화면을 터치패드처럼 사용합니다.
   - 스와이프하여 마우스 포인터를 이동합니다.
   - 마우스를 화면의 가장자리를 넘어서 팬.
   - 탭하면 포인터가 있는 곳에서 마우스를 클릭합니다.
   - 스크롤 이벤트는 마우스 포인터가 위치한 위치로 전송됩니다.
 
-한 손으로 방법 :
+한 손:
    - 다이렉트, 스와이프 팬 모드와 동일하지만 롱 탭하면 모드를 선택할 수 있는 메뉴가 열립니다.
    - 모드를 선택한 후 화면에서 손가락을 스와이프하면 선택한 제스처가 실행됩니다.
    - 손가락을 떼면 제스처가 완료됩니다.
@@ -94,10 +94,10 @@
    - 우클릭: 탭한 상태에서 두 번째 손가락으로 탭합니다(화면의 다른 위치).
    - 대체 오른쪽 클릭: 기기의 '뒤로' 버튼 또는 제스처를 사용합니다.
    - 중간 클릭: 탭한 채로 두 손가락으로 탭합니다(화면의 다른 위치).
-- 마우스 드래그: 탭-홀드-길게 스와이프합니다.
+   - 마우스 드래그: 탭-홀드-길게 스와이프합니다.
    - 스크롤 휠: 두 손가락으로 위아래로 좌우로 드래그합니다. 퀵 드래그는 더 빨리 스크롤합니다.
    - 줌인/줌아웃: 핀치 줌으로 스케일링을 제어합니다.
-   -Ctrl/Alt 키: 메뉴->Ctrl/Alt 버튼. 완료되면 끄는 것을 잊지 마십시오!
+   - Ctrl/Alt 키: 메뉴->Ctrl/Alt 버튼. 완료되면 끄는 것을 잊지 마십시오!
    - 키 조합: [메뉴]->[기타]->[키 보내기].
    - 텍스트 보내기: 화면 키보드로 입력하거나 [메뉴]->[기타]->[텍스트 보내기]를 사용합니다."</string>
 
@@ -106,7 +106,7 @@
   <string name="error_failed_to_obtain_vv_content">.vv 파일을 가져오는 데 실패했습니다. 다시 다운로드하십시오. 그러나 이번에는 파일 관리자의 다운로드 폴더에서 빠르게 열립니다.</string>
   <string name="error_failed_to_obtain_vv_file">.vv 파일을 찾을 수 없습니다. 다시 다운로드하십시오. 하지만 이번에는 알림 영역에서 열거나 가능한 경우 브라우저에서 직접 열어보세요.</string>
   <string name="error_dialog_title">오류</string>
-  <string name="info_dialog_title">정보</string>
+  <string name="info_dialog_title">정보보기</string>
   <string name="info_vm_launched_on_stand_by">VM의 전원이 꺼져 있음을 감지하고 기동했습니다. 몇 분 후에 다시 시도하십시오. 너무 일찍 연결이 실패하면 나중에 다시 시도하십시오.</string>
   <string name="error_no_vm_found_for_user">특정 사용자가 사용할 수 있는 가상 머신이 없습니다.</string>
   <string name="error_no_such_vm_found_for_user">지정한 사용자에 대해 제공된 ID가 있는 가상 머신을 찾을 수 없습니다. ID를 지우고 VM 목록을 가져옵니다.</string>
@@ -129,7 +129,7 @@
   <string name="ssl_strict">인증서와 일치하는 일반 이름 요청(권장)</string>
   <string name="usb">USB(먼저 OTG 케이블을 연결합니다)</string>
 
-  <string name="ad_donate_text0">Pro 버전은 다단계 인증에 지원하고 있습니다.무단 사용 방지를 위해 마스터 Password 기능도 지원하고 있습니다.또한 Password/SSH키를 포함한 모든 연결 설정이 암호화가 되어 있기 때문에 도난 방지에도 도움이됩니다.</string>
+  <string name="ad_donate_text0">Pro 버전은 다단계 인증에 지원하고 있습니다.무단 사용 방지를 위해 마스터 비밀번호 기능도 지원하고 있습니다.또한 Password/SSH키를 포함한 모든 연결 설정이 암호화가 되어 있기 때문에 도난 방지에도 도움이됩니다.</string>
   <string name="ad_donate_text1">Pro 버전 구입시 소액 기부에 동의하시는 분은 여기를 눌러주세요.</string>
   <string name="ad_donate_text2">Pro 버전 사용시 이 다이얼로그는 무효로 설정 가능합니다. 또한 추가 기능에 액세스 할 수 있습니다.</string>
   <string name="ad_donate_text3">프로젝트에 대한 자세한 내용은 아래 클라이언트 애플리케이션용 링크를 참조하십시오:</string>
@@ -206,10 +206,10 @@
   <string name="button_send_text">텍스트 전송</string>
   <string name="button_send_without_saving">텍스트 전송/저장 안함</string>
   <string name="bvnc_app_name">bVNC Pro</string>
-  <string name="center_mouse">마우스@</string>
+  <string name="center_mouse">마우스 @</string>
   <string name="close">닫기</string>
-  <string name="color_format_caption">컬러 모드</string>
-  <string name="color_mode">컬러 모드</string>
+  <string name="color_format_caption">색상 모드</string>
+  <string name="color_mode">색상 모드</string>
 
   <string name="connect_button">연결</string>
   <string name="back_button">돌아가기</string>
@@ -235,7 +235,7 @@
   <string name="connection_type_vnc_over_ssl">AnonTLS를 경유한 안전한 VNC</string>
   <string name="connection_type_vnc_over_stunnel">SSL 터널을 경유한 안전한 VNC</string>
   <string name="connection_type_vnc_over_vencrypt">VeNCrypt를 경유한 안전한 VNC</string>
-  <string name="connection_edit_delete_prompt">연결을 수정하거나 삭제하시겠습니까?</string>
+  <string name="connection_edit_delete_prompt">연결을 편집하거나 삭제하시겠습니까?</string>
   <string name="connection_edit">편집</string>
   <string name="connection_delete">삭제</string>
 
@@ -243,13 +243,13 @@
   <string name="copy_list_button">복사 목록</string>
   <string name="ctrl_alt_del">Ctrl-Alt-Del</string>
   <string name="default_input_mode">기본 입력 모드</string>
-  <string name="delete_connection">연결을 삭제</string>
+  <string name="delete_connection">연결 삭제</string>
   <string name="delete_key">선택한 키를 삭제</string>
   <string name="delete_key_list">키 리스트를 삭제</string>
-  <string name="disconnect">절단</string>
-  <string name="dpad_as_arrows">화살표 키는 D-Pad를, Ctrl키는 D-Pad 클릭을 사용한다.</string>
-  <string name="enable_recording">녹화를 활성화하기</string>
-  <string name="enable_sound">사운드를 활성화하기</string>
+  <string name="disconnect">연결 해제</string>
+  <string name="dpad_as_arrows">화살표 키를 D-Pad키로, Ctrl키를 D-Pad 클릭로 사용</string>
+  <string name="enable_recording">녹화 활성화</string>
+  <string name="enable_sound">사운드 활성화</string>
   <string name="enter_text">텍스트 전송</string>
   <string name="enter_text_title">전송용 텍스트 입력</string>
 
@@ -257,12 +257,12 @@
   <string name="error_connection_failed">연결에 실패했습니다.</string>
   <string name="error_connection_interrupted">연결이 중단되었습니다.</string>
   <string name="error_no_user_hostname">사용자 이름과 호스트 이름 (또는 IP 주소)를 입력하십시오.</string>
-  <string name="error_out_of_memory">리모트 화면표시에 충분한 메모리 할당을 할 수 없습니다. 애플리케이션 재시동/디바이스 재시동을 시도하십시오.또는 응용 프로그램 설정에서 리모트 데스크톱 크기 축소를 하여주십시요</string>
-  <string name="error_ovirt_unable_to_connect">연결/인증 수 없습니다. 서버 주소, 사용자 이름, Password 인증 기관 과 서브젝트를 확인하십시오.</string>
-  <string name="error_pick_correct_item">연결 타입에 올바른 아이템이 선택되어 있는지 확인하십시오.</string>
-  <string name="error_rdp_authentication_failed">RDP 인증에 실패했습니다! RDP 사용자 이름과 Password를 확인 후 다시 시도하십시오.</string>
-  <string name="error_rdp_connection_failed">RDP 연결에 실패했습니다! 네트워크 연결이 중단되었거나 RDP 서버가 중지/비활성화합니다. 또는 다른 사용자 세션이 변경되었습니다.</string>
-  <string name="error_rdp_unable_to_connect">RDP서버에 연결할 수 없습니다. RDP서버가 올바르게 설정되어 있는지/서버의 전원이 켜져 있는지/RDP가 활성화되어 있는지/서버가 동일한 네트워크에 있는지 확인하십시오.</string>
+  <string name="error_out_of_memory">원격 화면 표시에 충분한 메모리 할당을 할 수 없습니다. 애플리케이션 재시작하거나 기기를 재시작하세요. 또는 응용 프로그램 설정에서 원격 데스크톱 크기 축소를 시도해 볼 수 있습니다.</string>
+  <string name="error_ovirt_unable_to_connect">연결하거나 인증할 수 없습니다. 서버 주소, 사용자 이름, 비밀번호, 인증 기관과 Subject를 확인하십시오.</string>
+  <string name="error_pick_correct_item">연결 종류에 올바른 요소가 선택되어 있는지 확인하십시오.</string>
+  <string name="error_rdp_authentication_failed">RDP 인증에 실패했습니다! RDP 사용자 이름과 비밀번호를 확인하고 다시 시도하십시오.</string>
+  <string name="error_rdp_connection_failed">RDP 연결에 실패했습니다! 네트워크 연결이 중단되었거나, RDP 서버가 중지되거나 비활성화되었거나, 또는 사용자 세션이 만료되었습니다.</string>
+  <string name="error_rdp_unable_to_connect">RDP 서버에 연결할 수 없습니다. RDP 서버가 올바르게 설정되어 있는지, 서버의 전원이 켜져 있는지, RDP가 활성화되어 있는지, 서버가 동일한 네트워크에 있는지 확인하십시오.</string>
   <string name="error_security_type">지원되는 시큐리티 타입을 서버가 인식 할 수 없습니다.</string>
   <string name="error_spice_unable_to_connect">연결/인증 수 없습니다. 서버 주소, Password, 인증 기관 과 서브젝트를 확인하십시오.</string>
   <string name="error_ssh_could_not_exec_command">리모트 명령을 실행할 수 없습니다.</string>
@@ -285,22 +285,22 @@
   <string name="error_x509_could_not_generate_signature">SHA1/MDS 서명 인증서를 생성 할 수 없습니다.SHA1/MDS 알고리즘을 찾을 수 없습니다.</string>
   <string name="export_settings">Export</string>
   <string name="export_settings_path" />
-  <string name="extra_keys_disable">특수 키를 비활성화</string>
-  <string name="extra_keys_enable">특수 키를 활성화</string>
+  <string name="extra_keys_disable">특수 키 비활성화</string>
+  <string name="extra_keys_enable">특수 키 활성화</string>
   <string name="fit_to_screen">화면 크기에 맞추기</string>
   <string name="force">전체 화면 비트 맵</string>
   <string name="freeardp_app_name">aRDP Free</string>
   <string name="freeaspice_app_name">aSPICE Free</string>
   <string name="freebvnc_app_name">bVNC Free</string>
-  <string name="immersive_mode_disable">Immersive 모드를 비활성화</string>
-  <string name="import_export_settings">Import/Export</string>
-  <string name="import_settings">Import</string>
+  <string name="immersive_mode_disable">전체화면 모드 비활성화</string>
+  <string name="import_export_settings">가져오기/내보내기</string>
+  <string name="import_settings">가져오기</string>
   <string name="import_settings_file_url" />
   <string name="info">정보</string>
   <string name="info_cert_signatures">"인증서 정보:"</string>
   <string name="info_cert_signatures_identical">\n\n 중간자 공격 대책으로 서버 인증서와 정보가 일치하는지 확인 가능합니다.</string>
   <string name="info_cert_tunnel">다음 인증서에 의해 특정 된 호스트에 연결 하시겠습니까?: %1$s\n\nIssued to:\n%2$s\n\nIssued by:\n%3$s\n\nValid from:\n%4$s\n\nValid until:\n%5$s\n\nNote: The application does not verify certificate authorities or check for certificate revocation.</string>
-  <string name="info_continue_connecting">"연결을 계속하기："</string>
+  <string name="info_continue_connecting">"연결 계속하기："</string>
   <string name="info_encoding">"암호화"</string>
   <string name="info_progress_dialog_aborted">연결이 중단되었습니다!</string>
   <string name="info_progress_dialog_connecting" tools:ignore="TypographyEllipsis">연결 중 ...</string>
@@ -310,33 +310,33 @@
   <string name="info_ssh_key_fingerprint">"호스트 키 지문:"</string>
   <string name="info_ssh_key_fingerprint_identical">\n\n 중간자 공격 방지용으로 알려진 된 서버 인증서 지문과 일치하는지 확인 가능합니다.</string>
   <string name="info_update_color_model_to">"컬러 모델 업데이트"</string>
-  <string name="input_method_direct_drag_pan_description">직접,길게 누르고 평행 이동: 스와이프하고 드래그 앤 드롭.왼쪽 클릭은 한 손가락으로 화면을 터치.오른쪽 클릭은 손가락 2개.중간 클릭은 손가락 3개.두 손가락으로 스 와이프하여 스크롤.길게으로 평행 이동 시작.</string>
-  <string name="input_method_direct_swipe_pan_description">직접,스와이프 평행 이동: 스와이프하고 자유 자재로 평행 이동.왼쪽 클릭은 한 손가락으로 화면을 터치.오른쪽 클릭은 손가락 2개.중간 클릭은 손가락 3개.두 손가락으로 스와이프하여 스크롤.길게 눌러 드래그 앤 드롭.</string>
+  <string name="input_method_direct_drag_pan_description">직접, 팬 고정: 스와이프하고 드래그 앤 드롭.왼쪽 클릭은 한 손가락으로 화면을 터치.오른쪽 클릭은 손가락 2개.중간 클릭은 손가락 3개.두 손가락으로 스 와이프하여 스크롤.길게으로 평행 이동 시작.</string>
+  <string name="input_method_direct_swipe_pan_description">직접, 스와이프 팬: 스와이프하고 자유 자재로 평행 이동.왼쪽 클릭은 한 손가락으로 화면을 터치.오른쪽 클릭은 손가락 2개.중간 클릭은 손가락 3개.두 손가락으로 스와이프하여 스크롤.길게 눌러 드래그 앤 드롭.</string>
   <string name="input_method_single_handed_description">한손 조작: 스와이프하고 자유 자재로 평행 이동.왼쪽 클릭은 한 손가락으로 화면을 터치.길게하여 클릭(왼쪽/오른쪽/중간) 모드(드래그/스크롤/줌)을 선택합니다.멀티 터치 조작도 가능하다.</string>
-  <string name="input_method_touchpad_description">터치 패드 시뮬레이션: 스와이프하면 포인터 이동.왼쪽 클릭은 한 손가락으로 화면을 터치.오른쪽 클릭은 손가락 2개.중간 클릭은 손가락 3개.두 손가락으로 스 와이프하여 스크롤.길게 눌러 드래그 앤 드롭.</string>
+  <string name="input_method_touchpad_description">터치패드 시뮬레이션: 스와이프하면 포인터 이동.왼쪽 클릭은 한 손가락으로 화면을 터치.오른쪽 클릭은 손가락 2개.중간 클릭은 손가락 3개.두 손가락으로 스 와이프하여 스크롤.길게 눌러 드래그 앤 드롭.</string>
   <string name="input_mode">입력 모드</string>
-  <string name="input_mode_drag_pan_zoom_mouse">직접, 길게 누르고 평행 이동</string>
+  <string name="input_mode_drag_pan_zoom_mouse">직접, 팬 고정</string>
   <string name="input_mode_fit_to_screen">평행 이동 없음; 트랙볼 마우스</string>
-  <string name="input_mode_help">입력 모드 HELP</string>
+  <string name="input_mode_help">도움말 - 입력 모드</string>
   <string name="input_mode_help_text">"
 키보드 아이콘을 탭하여 온 스크린 키보드를 표시(모든 입력 모드에 대응). 사용 기기에 따라 키보드 표시 방법은 다릅니다.
 
-직접 입력 모드 사용하면 더 직관적 인 터치 스크린 조작이 가능합니다. 터치 패드 시뮬레이션 모드로하면 마우스를 사용한 손가락 조작이 가능합니다.
+직접 입력 모드 사용하면 더 직관적 인 터치 스크린 조작이 가능합니다. 터치패드 시뮬레이션 모드로하면 마우스를 사용한 손가락 조작이 가능합니다.
 
-직접 스 와이프하고 평행 이동 모드 :
+직접, 스와이프 팬 :
 ･터치에서 직접적인 마우스 조작
 ･스와이프하고 평행 이동
 ･탭하여 마우스 클릭 조작
 ･2개의 손가락 스와이프 시작 위치로 스크롤 이벤트 전송
 
-직접, 길게 누르고 평행 이동 모드 :
+직접, 팬 고정 :
 ･터치에서 직접적인 마우스 조작
 ･길게 누르면 평행 이동 시작
 ･탭하여 마우스 클릭 조작
 ･2개의 손가락 스와이프 시작 위치로 스크롤 이벤트 전송
 
-터치 - 패드 시뮬레이션 모드 :
-･화면을 터치 패드 조작
+터치패드 시뮬레이션 모드 :
+･화면을 터치패드 조작
 ･스와이프하여 마우스 포인터 이동
 ･화면 밖에 커서 이동하고 평행 이동
 ･탭하여 마우스 클릭 조작
@@ -361,11 +361,11 @@
 ･텍스트 전송 : 온 스크린 키보드로 입력하거나 메뉴&gt; 상세&gt; 텍스트 전송에서 입력"</string>
   <string name="input_mode_mouse">마우스 포인터 컨트롤</string>
   <string name="input_mode_panning">데스크톱 패닝 모드</string>
-  <string name="input_mode_single_handed">한손</string>
-  <string name="input_mode_touch_pan_zoom_mouse">직접,스와이프 평행 이동</string>
-  <string name="input_mode_touchpad">터치 패드 시뮬레이션</string>
+  <string name="input_mode_single_handed">한 손</string>
+  <string name="input_mode_touch_pan_zoom_mouse">직접, 스와이프 팬</string>
+  <string name="input_mode_touchpad">터치패드 시뮬레이션</string>
   <string name="intro_close">닫기</string>
-  <string name="intro_dont_show">다음부터 비표시</string>
+  <string name="intro_dont_show">다음부터 숨김</string>
   <string name="intro_header" />
   <string name="intro_text">
 bVNC의 대응 기능는 이하와 같습니다 :
@@ -382,9 +382,9 @@ bVNC의 대응 기능는 이하와 같습니다 :
 &lt;br&gt;
 ･자동 세션 저장 기능
 &lt;br&gt;
-･스케일링 모드 : 확대 / 축소, 화면 크기에 맞춤 1 대 1
+･스케일링 모드 : 줌 가능, 화면 크기에 맞추기, 1:1
 &lt;br&gt;
-･리모트 마우스 멀티 터치 컨트롤 (다이렉트 / 터치 패드 시뮬레이션 입력 모드)
+･리모트 마우스 멀티 터치 컨트롤 (다이렉트 / 터치패드 시뮬레이션 입력 모드)
 &lt;br&gt;
 ･리모트 마우스로 풀 한손 컨트롤 (한손 입력 모드)
 &lt;br&gt;
@@ -419,9 +419,9 @@ bVNC의 대응 기능는 이하와 같습니다 :
   <string name="intro_title">bVNC: 직관적이고 안전한 VNC 클라이언트</string>
   <string name="intro_version_text" />
   <string name="keep_password_button">저장</string>
-  <string name="keep_screen_awake_enable">Sleep 모드를 비활성화하는</string>
+  <string name="keep_screen_awake_enable">Sleep 모드 비활성화</string>
   <string name="keys_caption">키</string>
-  <string name="landscape_force">강제 가로 설정</string>
+  <string name="landscape_force">가로 방향 고정</string>
   <string name="left_handed_mode">왼손 모드</string>
   <string name="list_caption">리스트</string>
   <string name="list_name_caption">리스트 이름</string>
@@ -471,21 +471,21 @@ bVNC의 대응 기능는 이하와 같습니다 :
 
 [접속의 검색]필드를 사용하면, 표시되어 있는 접속을 필터링해서 접속을 신속하게 찾을 수 있습니다."
   </string>
-  <string name="master_password_enable">마스터 Password를 활성화하는</string>
-  <string name="master_password_error_failed_to_disable">마스터 Password를 비활성화 할 수 없습니다.기기의 가능한 용량을 확인하고 다시 실행하십시오.</string>
-  <string name="master_password_error_failed_to_enable">마스터 Password를 활성화 할 수 없습니다.기기의 가능한 용량을 확인하고 다시 실행하십시오.</string>
-  <string name="master_password_error_intents_not_supported">마스터 Password활성화 된 경우 연결 취지가 지원되지 않습니다.</string>
-  <string name="master_password_error_password_necessary">계속하려면 마스터 Password가 필요합니다.</string>
-  <string name="master_password_error_password_not_set">설정 마스터 Password가 취소되었습니다.</string>
-  <string name="master_password_error_shortcuts_not_supported">마스터 Password를 활성화 시켰을 때 단축키는 지원되지 않습니다.</string>
-  <string name="master_password_error_wrong_password">공급 된 마스터 Password로 인증 할 수 없습니다.</string>
-  <string name="master_password_hint_once">Password 입력.</string>
-  <string name="master_password_hint_twice">Password 재 입력.</string>
-  <string name="master_password_set">마스터 Password 설정</string>
-  <string name="master_password_set_error">Password가 일치하지 않습니다. 확인하십시오.</string>
-  <string name="master_password_set_message">마스터 Password를 입력하고 잊지 않도록하십시오.Password 자릿수가 길수록 분석 된 어렵습니다.잘못된 설정을하거나 잊어 버린 경우 모든 설정이 손상됩니다!! 기존 설정을 백업로 Export 할 것을 권장합니다(메뉴에서 가능).Export 된 데이터는 암호화되지 않습니다.안전한 장소에 보관하십시오.</string>
-  <string name="master_password_verify">마스터 Password 를 확인하기</string>
-  <string name="master_password_verify_message">계속을 위해 마스터 Password를 정확하게 입력하십시오.</string>
+  <string name="master_password_enable">마스터 비밀번호 활성화</string>
+  <string name="master_password_error_failed_to_disable">마스터 비밀번호를 비활성화 할 수 없습니다. 기기의 사용 가능한 용량을 확인하고 다시 실행하십시오.</string>
+  <string name="master_password_error_failed_to_enable">마스터 비밀번호를 활성화 할 수 없습니다. 기기의 사용 가능한 용량을 확인하고 다시 실행하십시오.</string>
+  <string name="master_password_error_intents_not_supported">마스터 비밀번호가 활성화 된 경우 연결 Intent가 지원되지 않습니다.</string>
+  <string name="master_password_error_password_necessary">계속하려면 마스터 비밀번호가 필요합니다.</string>
+  <string name="master_password_error_password_not_set">마스터 비밀번호 설정이 취소되었습니다.</string>
+  <string name="master_password_error_shortcuts_not_supported">마스터 비밀번호를 활성화 시킨 경우 단축키가 지원되지 않습니다.</string>
+  <string name="master_password_error_wrong_password">마스터 비밀번호로 인증 할 수 없습니다.</string>
+  <string name="master_password_hint_once">비밀번호 입력</string>
+  <string name="master_password_hint_twice">비밀번호 확인</string>
+  <string name="master_password_set">마스터 비밀번호 설정</string>
+  <string name="master_password_set_error">비밀번호가 일치하지 않습니다. 확인하십시오.</string>
+  <string name="master_password_set_message">마스터 비밀번호를 입력하고 꼭 기억하세요. 비밀번호 자릿수가 길수록 크랙이 어렵습니다. 잘못된 설정을 하거나 잊어버린 경우 모든 설정을 잃어버릴 수 있습니다!! 기존 설정을 백업을 통해 내보내기 할 것을 권장합니다. (메뉴에서 가능) 내보내기한 암호화되지 않은 설정을 안전하게 보관하세요.</string>
+  <string name="master_password_verify">마스터 비밀번호 확인</string>
+  <string name="master_password_verify_message">진행하기 위해 마스터 비밀번호를 정확하게 입력하십시오.</string>
   <string name="meta_key_title">특수 키를 보내기</string>
 
   <string name="mouse_follow_pan">마우스가 팬을 따라갑니다</string>
@@ -493,11 +493,11 @@ bVNC의 대응 기능는 이하와 같습니다 :
   <string name="new_connection">새 연결</string>
   <string name="new_list_button">새 리스트</string>
   <string name="nickname_caption">별명</string>
-  <string name="nickname_caption_hint">제목 (임의)</string>
+  <string name="nickname_caption_hint">제목 (선택)</string>
 
   <string name="off">Off</string>
 
-  <string name="one_to_one">１：１</string>
+  <string name="one_to_one">1:1</string>
   <string name="open_doc">매뉴얼/Wiki</string>
 
   <string name="pan_follow_mouse">팬이 마우스를 따라갑니다.</string>
@@ -511,8 +511,8 @@ bVNC의 대응 기능는 이하와 같습니다 :
   <string name="port_hint">포트</string>
   <string name="port_ssh_hint">포트</string>
   <string name="portrait_mode">연결될 때 세로 표시에 전환</string>
-  <string name="position_toolbar_last_used">Toolbar 위치 초기화</string>
-  <string name="applies_to_new_connections_only">새 연결만 적용</string>
+  <string name="position_toolbar_last_used">툴바 위치 초기화</string>
+  <string name="applies_to_new_connections_only">새 연결에 적용</string>
   <string name="pro_feature_mfa">서버의 다단계 인증이 활성화되어 있습니다.다단계 인증을 지원하고있는 Pro버전을 구입하십시오.Pro버전의 링크가 시작할 때 표시되는 화면에 있습니다</string>
   <string name="rdp_address_caption_hint">RDP 서버</string>
   <string name="rdp_adv_console_mode">콘솔 모드</string>
@@ -520,23 +520,23 @@ bVNC의 대응 기능는 이하와 같습니다 :
   <string name="rdp_adv_desktop_composition">데스크탑 컴포지션을 활성화하는</string>
   <string name="rdp_adv_font_smoothing">글꼴 다듬기 수행</string>
   <string name="rdp_adv_menu_animation">메뉴 애니메이션을 표시</string>
-  <string name="rdp_adv_redirect_sdcard">SD카드를 리디렉션</string>
-  <string name="rdp_adv_remotefx">RemoteFX를 활성화</string>
-  <string name="rdp_adv_visual_styles">Visual Styles를 활성화</string>
-  <string name="rdp_adv_window_contents">드래그중에 윈도우 컨텐츠을 표시</string>
+  <string name="rdp_adv_redirect_sdcard">SD카드 리디렉션</string>
+  <string name="rdp_adv_remotefx">RemoteFX 활성화</string>
+  <string name="rdp_adv_visual_styles">Visual Styles 활성화</string>
+  <string name="rdp_adv_window_contents">드래그 중에 윈도우 컨텐츠를 표시하기</string>
   <string-array name="rdp_connection_type">
     <item>@string/connection_type_rdp</item>
     <item>@string/connection_type_rdp_over_ssh</item>
   </string-array>
-  <string name="rdp_descript_geom">리모트 데스크탑 크기(WxH)</string>
-  <string name="rdp_domain_hint">RDP도메인</string>
+  <string name="rdp_descript_geom">리모트 데스크탑 크기 (WxH)</string>
+  <string name="rdp_domain_hint">RDP 도메인</string>
   <string name="rdp_geom_automatic">자동</string>
   <string name="rdp_geom_checkbox_enable">사용자 지정 해상도를 활성화</string>
   <string name="rdp_geom_custom">사용자 지정</string>
   <string name="rdp_geom_description_hint">서버 측에서 ExtendedDesktopSize의 대응이 필요</string>
   <string name="rdp_geom_disabled">무효</string>
-  <string name="rdp_geom_native_landscape">원래 디바이스 가로 방향</string>
-  <string name="rdp_geom_native_portrait">원래 디바이스 세로 방향</string>
+  <string name="rdp_geom_native_landscape">이 기기의 가로 방향에 맞추기</string>
+  <string name="rdp_geom_native_portrait">이 기기의 세로 방향에 맞추기</string>
   <string-array name="rdp_geometry">
     <item>@string/rdp_geom_native_landscape</item>
     <item>@string/rdp_geom_native_portrait</item>
@@ -567,7 +567,7 @@ aRDP의 대응 기능는 이하와 같다:
 &lt;br&gt;
 ･스케일링 모드: 확대/축소, 화면 크기에 맞춤 1대1
 &lt;br&gt;
-･리모트 마우스 멀티 터치 컨트롤 (다이렉트/터치 패드 시뮬레이션 입력 모드)
+･리모트 마우스 멀티 터치 컨트롤 (다이렉트/터치패드 시뮬레이션 입력 모드)
 &lt;br&gt;
 ･리모트 마우스로 풀 한손 컨트롤 (한손 입력 모드)
 &lt;br&gt;
@@ -650,8 +650,8 @@ aRDP지원 예정 기능:
 ・RDP연결 설정:
     (a) RDP 서버 / 포트 : RDP 서버를 가동하는 컴퓨터의 호스트 이름 혹은 IP 주소와 포트 번호를 입력합니다. SSH를 통한 RDP 모드의 경우이 IP 주소는 SSH 서버에서도 볼 수있습니다. SSH 서버와 RDP 서버가 동일한 컴퓨터 인 경우 localhost를 사용할 수 있습니다. RDP 서버는 일반적으로 포트 3389에서 시작합니다.
     (b) RDP 사용자: Windows/UNIX 계정의 사용자 이름을 입력합니다.
-    (c) RDP도메인: 계정의 도메인 이름을 입력합니다.
-    (d) RDPPassword : Windows / UNIX 계정의 Password를 입력합니다. Password 용 시큐어 스토리지는 사용되지 않는 (데이터베이스에 저장된다). "저장"에 체크 한 경우에만 Password 저장된다. aRDP을 중단하지 않으면 입력 한 Password 입력 된 상태로 됩니다.
+    (c) RDP 도메인: 계정의 도메인 이름을 입력합니다.
+    (d) RDP 비밀번호 : Windows / UNIX 계정의 비밀번호를 입력합니다. 비밀번호 용 보안 스토리지는 사용되지 않는 (데이터베이스에 저장된다). "저장"에 체크 한 경우에만 비밀번호가 저장된다. aRDP을 중단하지 않으면 입력 한 비밀번호가 입력 된 상태로 됩니다.
 
 ・상세 설정 : 여기에서는 데스크탑 해상도의 사용자 설정 또는 RDP 성능의 미세 조정을 실시합니다.
 
@@ -663,9 +663,9 @@ aRDP지원 예정 기능:
   <string name="rdp_password_hint">RDP Password</string>
   <string name="rdp_server_empty">RDP서버 혹은 포트가 비어 있습니다. 연결할 수 없습니다!</string>
   <string name="rdp_username_hint">RDP 사용자 이름</string>
-  <string name="remote_sound_disabled">사운드 무효</string>
-  <string name="remote_sound_on_device">사운드 온 디바이스</string>
-  <string name="remote_sound_on_server">사운드 온 서버</string>
+  <string name="remote_sound_disabled">사운드 비활성화</string>
+  <string name="remote_sound_on_device">이 기기에서 사운드 재생</string>
+  <string name="remote_sound_on_server">원격 기기에서 사운드 재생</string>
   <string name="repeater_button">UltraVNC 리피터</string>
   <string name="repeater_caption">중요: UltraVNC 리피터 사용시 IP주소와 포트 번호는이 다이얼로그 외에서 입력하십시오.여기에서는 실제 VNC서버의 IP주소와 포트 번호를 입력하십시오. VNC서버의 IP주소와 포트 번호는 콜론으로 구분합니다. 예:192.168.0.100:5900</string>
   <string name="repeater_caption_hint">UltraVNC 리피터</string>
@@ -674,13 +674,13 @@ aRDP지원 예정 기능:
   <string name="repeater_empty_text">리피터 기능 없음</string>
   <string name="repeater_save">사용</string>
   <string name="right_alt_as_iso_l3_shift">SO L3 시프트용으로 오른쪽 Alt(VNC한정)</string>
-  <string name="rotate_dpad">Bluetooth 혹은 소프트 D-Pad를 회전</string>
-  <string name="save_as_copy">복사본을 저장</string>
+  <string name="rotate_dpad">블루투스 또는 소프트웨어 D-Pad를 회전</string>
+  <string name="save_as_copy">복사하여 저장</string>
   <string name="scaling">스케일링</string>
-  <string name="scaling_zoomable">확대 축소 가능</string>
+  <string name="scaling_zoomable">줌 가능</string>
   <!-- Send selected metakey -->
   <string name="send_button">전송</string>
-  <string name="send_key_again">키를 다시 전송</string>
+  <string name="send_key_again">키 재전송</string>
   <string name="shift_check">Shift</string>
   <string name="shortcut_label_vnc">VNC 연결</string>
   <string name="shortcut_label_rdp">RDP 연결</string>
@@ -695,7 +695,7 @@ aRDP지원 예정 기능:
   <string name="single_scroll">스크롤 모드 - 위아래로 스와이프하고 스크롤 손가락을 떼고 정지</string>
   <string name="single_zoom">줌 모드 - 위아래로 스와이프하고 스크롤 손가락을 떼고 정지</string>
   <string name="snap_one_to_one">1:1확대 표시에 스냅</string>
-  <string name="special_keys">키를 전송</string>
+  <string name="special_keys">키 전송</string>
   <string name="spice_address_caption_hint">SPICE 서버</string>
   <string name="spice_button_import_ca">CA를 import</string>
   <string name="spice_ca_cert_path_hint">인증 기관 파일의 경로</string>
@@ -722,7 +722,7 @@ aSPICEで의 대응 기능는 이하와 같다 :
 &lt;br&gt;
 ・스케일링 모드 : 확대 / 축소, 화면 크기에 맞춤 1 대 1
 &lt;br&gt;
-・리모트 마우스 멀티 터치 컨트롤 (다이렉트 / 터치 패드 시뮬레이션 입력 모드)
+・리모트 마우스 멀티 터치 컨트롤 (다이렉트 / 터치패드 시뮬레이션 입력 모드)
 &lt;br&gt;
 ・리모트 마우스로 풀 한손 컨트롤 (한손 입력 모드)
 &lt;br&gt;
@@ -796,11 +796,11 @@ aSPICEで의 대응 기능는 이하와 같다 :
 　　(a) SSH 서버/포트: SSH 서버 IP주소와 포트 번호. 기본 포트 번호는 22.
 　　(b) 사용자 이름/Password  SSH서버 계정 정보(사용자 이름/Password).aRDP을 중단하지 않으면 입력 한 Password 입력 된 상태로된다.
 　　(c) 키 관리/키의 사용 : 공개 키/비밀 키 관리 용 스위치. 인증 방법 Password 대신 키 사용 여부 체크 박스. key-pair(공개 키와 비밀 키) 생성 후 클립포드에 복사를 실행하면 SPICE 서버에 연결 한 후 공개 키 붙여 넣기가 가능합니다.(클립 보드는 서버에 동기화되는)
- 
+
 ・SPICE연결 설정:
 　　(a)SPICE 서버 / 포트 : SPICE 서버를 가동하는 컴퓨터의 호스트 이름 혹은 IP 주소와 포트 번호를 입력합니다. SSH를 통한 SPICE 모드의 경우이 IP 주소는 SSH 서버에서도 볼 수 있습니다. SSH 서버와 SPICE 서버가 동일한 컴퓨터 인 경우 localhost를 사용할 수 있습니다. SPICE 서버는 일반적으로 포트 5900에서 시작합니다.
 　　(d) SPICE Password : SPICE 세션의 보호를 위해 Password를 입력합니다. Password 용 시큐어 스토리지는 사용되지 않는 (데이터베이스에 저장된다.) "저장"에 체크 한 경우에만 Password 저장됩니다. aSPICE을 중단하지 않으면 입력 한 Password 입력 된 상태로됩니다.
- 
+
 ・상세 설정: 여기에서는 데스크탑 해상도의 사용자 설정 또는 SPICE 성능의 미세 조정을 실시한다.
 
 ・로컬 기기 조정: 사용 단말기에서 aSPICE 동작 조정한다.
@@ -832,11 +832,11 @@ aSPICEで의 대응 기능는 이하와 같다 :
   <string name="vnc_server_empty_no_save">VNC 서버 또는 포트가 비어 있습니다. 연결을 저장할 수 없습니다!</string>
 
   <string name="warning_cert_does_not_match">경고: 서명에 저장되는 x509 인증서를 사용하는 서버 인증서와 일치하지 않습니다! 중간자 공격의 가능성이 있습니다. 키의 변경을 알고있는 경우 진행합니다.</string>
-  <string name="copy_logcat">Logcat 복사</string>
-  <string name="log_copied">Logcat가 클립 보드에 복사되었습니다. E-mail 혹은 지원 포럼 붙여 넣기 가능합니다. 개인 정보는 게재 전에 내용을 확인하시기 바랍니다.</string>
-  <string name="info_set_touchpad_input_mode">클라이언트 모드의 마우스 입력이 서버 비 대응을위해 기존의 마우스 입력이 제대로되지 않습니다.가상 머신에 SPICE 도구가 설치되어 있는지 확인하십시오. 혹은 메뉴에서 시뮬레이션 터치 패드 입력 모드로 전환하십시오.</string>
+  <string name="copy_logcat">Logcat 기록 복사</string>
+  <string name="log_copied">Logcat 기록이 클립 보드에 복사되었습니다. E-mail 혹은 지원 포럼 붙여 넣기 가능합니다. 개인 정보는 게재 전에 내용을 확인하시기 바랍니다.</string>
+  <string name="info_set_touchpad_input_mode">클라이언트 모드의 마우스 입력이 서버 비 대응을위해 기존의 마우스 입력이 제대로되지 않습니다.가상 머신에 SPICE 도구가 설치되어 있는지 확인하십시오. 혹은 메뉴에서 시뮬레이션 터치패드 입력 모드로 전환하십시오.</string>
   <string name="vnc_connection_settings">VNC 연결 설정</string>
-  <string name="show_advanced_settings">상세 설정 표시</string>
+  <string name="show_advanced_settings">고급 설정 표시</string>
   <string name="use_no_compression_for_local_connections">압축 없음 (로컬 연결, Hextile 인코딩)</string>
   <string name="rdp_connection_settings">RDP 연결 설정</string>
   <string name="local_device_tweaks">로컬 디바이스 조정</string>
@@ -851,18 +851,18 @@ aSPICEで의 대응 기능는 이하와 같다 :
   <string name="copy_of">복사</string>
   <string name="ssh_key_generated">새 키가 성공적으로 작성 혹은 가져 오는되었습니다. \'Generate/Export Key\'스위치를 탭하고 공유 클립 보드로 복사, 공개 키 내보내기 가능합니다.</string>
   <string name="ssh_tunnel_settings">SSH 터널 설정</string>
-  <string name="cursor_force_local">"로컬"</string>
-  <string name="cursor_force_disable">"무효"</string>
+  <string name="cursor_force_local">"이 기기"</string>
+  <string name="cursor_force_disable">"끄기"</string>
   <string name="cursor_mode">"커서 모드 :"</string>
   <string name="rendering_mode">"렌더링 모드 :"</string>
-  <string name="color_24_bit">"24비트 컬러(24 bpp)"</string>
-  <string name="color_256">"256컬러(8 bpp)"</string>
-  <string name="color_64">"64컬러(4 bpp)"</string>
-  <string name="color_8">"8컬러(2 bpp)"</string>
-  <string name="color_greyscale">"그레이 스케일(1 bpp)"</string>
+  <string name="color_24_bit">"24비트 색상(24 bpp)"</string>
+  <string name="color_256">"256색(8 bpp)"</string>
+  <string name="color_64">"64색(4 bpp)"</string>
+  <string name="color_8">"8색(2 bpp)"</string>
+  <string name="color_greyscale">"회색조(1 bpp)"</string>
   <string name="color_black_and_white">"흑백(1 bpp)"</string>
   <string name="show">"표시"</string>
-  <string name="hide">"비표시"</string>
+  <string name="hide">"숨김"</string>
   <string name="search_connections">연결 검색</string>
   <string name="user_not_specified">사용자가 지정되지 않았습니다.</string>
   <string name="enter_ssh_credentials">SSH credentials(자격 증명)을 입력하세요.</string>
@@ -892,12 +892,12 @@ aSPICEで의 대응 기능는 이하와 같다 :
   - 고급 설정: 이 섹션에서는 로컬 장치, 프로토콜 및 성능의 미세 조정을 확인할 수 있습니다."</string>
   <string name="help">도움</string>
   <string name="support_forum">지원 포럼</string>
-  <string name="report_bug">버그보고</string>
+  <string name="report_bug">버그 제보</string>
   <string name="download_from_server">서버에서 다운로드</string>
   <string name="import_from_file">파일에서 가져오기</string>
   <string name="please_grant_permission_from_prefs">설정을 통해 애플리케이션에 권한을 부여해야 할 수 있습니다.</string>
   <string name="rdp_adv_gfx">RDP Gfx</string>
   <string name="rdp_adv_gfxh264">RDP Gfx H264</string>
-  <string name="more_debug_logging">기타 디버그 로그</string>
-  <string name="prefer_sending_unicode">유니코드 입력(Windows만 해당)</string>
+  <string name="more_debug_logging">기타 디버그 기록</string>
+  <string name="prefer_sending_unicode">유니코드 입력 (Windows 전용)</string>
 </resources>
